@@ -5,6 +5,6 @@ module.exports = function(deployer, network, accounts) {
   const endBlock = startBlock + 300  // blockchain block number where it will end. 300 is little over an hour.
   const rate = new web3.BigNumber(1000) // rate of ether to Vamshi Coin in wei
   const wallet = web3.eth.accounts[0] // the address that will hold the fund. Recommended to use a multisig one for security.
-
-  deployer.deploy(VamshiCoinCrowdsale, startBlock, endBlock, rate, wallet)
+  const token = web3.eth.accounts[1]
+  deployer.deploy(VamshiCoinCrowdsale, rate, wallet,token)
 }
