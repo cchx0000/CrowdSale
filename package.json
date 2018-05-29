@@ -21,7 +21,7 @@
   "homepage": "https://github.com/vamshi4001/CrowdSale#readme",
   "dependencies": {
     "ethereumjs-testrpc": "^4.1.1",
-    "truffle": "^3.4.9",
+    "truffle": "^4.1.11",
     "zeppelin-solidity": "^1.2.0"
   }
 }

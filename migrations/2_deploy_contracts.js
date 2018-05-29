@@ -1,4 +1,4 @@
-var VamshiCoinCrowdsale = artifacts.require("./VamshiCoinCrowdsale.sol")
+var VamshiCoinCrowdsale = artifacts.require("./HeyChainCrowdsale.sol")
 
 module.exports = function(deployer, network, accounts) {
   const startBlock = web3.eth.blockNumber + 2 // blockchain block number where the crowdsale will commence. Here I just taking the current block that the contract and setting that the crowdsale starts two block after
