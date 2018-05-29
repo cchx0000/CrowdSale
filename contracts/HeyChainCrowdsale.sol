@@ -6,7 +6,7 @@ import '../node_modules/zeppelin-solidity/contracts/crowdsale/Crowdsale.sol';
 
 contract HeyChainCrowdsale is Crowdsale {
 
-  function HeyChainCrowdsale(uint256 _startBlock, uint256 _endBlock, uint256 _rate, address _wallet) Crowdsale(_startBlock, _endBlock, _rate, _wallet) {
+  function HeyChainCrowdsale(uint256 _rate, address _wallet, ERC20 _token) Crowdsale(_rate, _wallet, _token) {
   }
 
   // creates the token to be sold.
